@@ -1,10 +1,9 @@
 let toDoChores = document.getElementById("chores-list");
-let choreInput;
 function addChores(pressEnter) {
   if (pressEnter.key !== "Enter") {
     return;
   }
-  choreInput = document.getElementById("chore-input");
+  let choreInput = document.getElementById("chore-input");
 
   if (choreInput.value !== "") {
     toDoChores.innerHTML += `<li>${choreInput.value}</li>`;
