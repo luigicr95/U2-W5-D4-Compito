@@ -1,4 +1,5 @@
 let toDoChores = document.getElementById("chores-list");
+
 function addChores(pressEnter) {
   if (pressEnter.key !== "Enter") {
     return;
@@ -15,7 +16,7 @@ function addChores(pressEnter) {
 }
 
 function boldText() {
-  toDoChores.classList.toggle("boldtext");
+  toDoChores.classList.toggle("bold");
 }
 
 function redText() {
